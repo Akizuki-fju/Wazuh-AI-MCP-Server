@@ -42,4 +42,6 @@
 ### 1. 安裝依賴 (Installation)
 
 ```bash
+
 pip install streamlit requests python-dotenv langchain-openai langchain-community
+(或著直接pip install requirements.txt)
