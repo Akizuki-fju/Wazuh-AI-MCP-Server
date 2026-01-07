@@ -18,8 +18,8 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # --- 2. API 連線與認證機制 ---
 WAZUH_API_URL = "https://192.168.56.103:55000"
-WAZUH_USER = "wazuh-wui"
-WAZUH_PASS = r"DSFRV4u?ztWElnh2Mt0i?qU?9hOn3Fsq"
+WAZUH_USER = "**********"
+WAZUH_PASS = r"******************"
 
 def get_token():
     """
@@ -188,4 +188,5 @@ if prompt := st.chat_input("請輸入指令..."):
         else:
             response_content = st.session_state.llm.invoke([HumanMessage(content=prompt)]).content
             st.write(response_content)
+
             st.session_state.messages.append({"role": "assistant", "content": response_content})
