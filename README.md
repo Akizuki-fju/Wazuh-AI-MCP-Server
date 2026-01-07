@@ -42,6 +42,21 @@
 ### 1. 安裝依賴 (Installation)
 
 ```bash
-
 pip install streamlit requests python-dotenv langchain-openai langchain-community
-(或著直接pip install requirements.txt)
+(或pip install requirements.txt)
+
+### 2. 環境設定 (Configuration)
+請在專案根目錄建立 .env 檔案，並填入您的 NVIDIA API Key：
+
+Ini, TOML
+
+NVIDIA_API_KEY=nvapi-your-key-here...(****的地方)
+(Wazuh 連線資訊已內建於系統設定中)
+
+### 3. 啟動系統 (Run)
+Bash
+
+python -m streamlit run app.py
+
+📝 License
+This project is for educational purposes (NTU GenAI Course).
